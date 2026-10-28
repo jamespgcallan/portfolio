@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Selected published journalism, football business and cultural writing by James Callan, including RTÉ Sport, Touchline and The Sports Hacks." name="description"/><title>Writing &amp; Editorial | James Callan</title><link href="style.css" rel="stylesheet"/><style>
+.editorial-lead{max-width:800px;margin:0 0 46px;font-size:clamp(18px,2vw,25px);line-height:1.65;color:#38322a}
+.editorial-filter{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 30px}
+.editorial-filter button{font:600 12px 'Inter',sans-serif;background:transparent;border:1px solid #c8bba9;border-radius:40px;color:#30291f;cursor:pointer;padding:11px 17px}
+.editorial-filter button.selected,.editorial-filter button:hover{background:#181715;color:#f5f0e8;border-color:#181715}
+.article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 20px}
+.article-card{display:flex;flex-direction:column;background:#fff;border:1px solid #e7ded1;overflow:hidden;transition:transform .2s,border-color .2s;color:#1b1916;text-decoration:none}
+.article-card:hover{transform:translateY(-4px);border-color:#b59a60}
+.article-card[hidden]{display:none}
+.article-cover{height:230px;background:#1b1916;overflow:hidden}
+.article-cover img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;transition:transform .3s}
+.article-card:hover .article-cover img{transform:scale(1.045)}
+.article-inner{padding:22px;display:flex;flex-direction:column;flex:1;gap:12px}
+.article-meta{font:600 10px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.09em;color:#8c744a;line-height:1.7}
+.article-meta span{padding:0 4px;color:#948c82}
+.article-inner h3{font-size:clamp(20px,2vw,25px);letter-spacing:-.05em;line-height:1.19;margin:0}
+.article-inner p{font-size:14px;line-height:1.65;color:#665f54;margin:0;flex:1}
+.article-link{font-size:12px;font-weight:700;padding-top:6px}
+.writing-note{font-size:12px;color:#746b5d;margin-top:22px}
+@media(max-width:850px){.article-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.article-grid{grid-template-columns:1fr}.article-cover{height:270px}}
+
+.article-performance{margin-top:5px;font:600 12px 'IBM Plex Mono',monospace;color:#8f7649}.article-performance span{color:#b7a487;padding:0 4px}.writing-proof{background:#181715;color:#f2eee5;padding:22px 26px;margin:0 0 34px;display:flex;gap:30px;align-items:center;flex-wrap:wrap}.writing-proof strong{font-size:30px;letter-spacing:-.05em}.writing-proof span{font-size:13px;color:#d7cdb9;max-width:550px;line-height:1.6}
+
+/* Article-specific, fully offline-safe editorial covers.
+   These replace unrelated football graphics previously assigned to articles. */
+.article-cover{height:260px;position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:20px 21px!important;overflow:hidden}
+.article-cover strong{font:800 clamp(19px,2.2vw,30px)/1.07 'Manrope',sans-serif;letter-spacing:-.052em;max-width:96%;overflow-wrap:break-word;position:relative;z-index:1}
+.cover-mark,.cover-bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;position:relative;z-index:1}
+.cover-mark span,.cover-bottom span{font:700 9px/1.4 'IBM Plex Mono',monospace;letter-spacing:.11em;text-transform:uppercase}
+.cover-mark b{font:500 12px 'IBM Plex Mono',monospace}
+.cover-bottom span:last-child{font-size:22px}
+.article-cover-dark{background:#191817;color:#f4efe6}
+.article-cover-bronze{background:#6e5232;color:#fff9ed}
+.article-cover-cream{background:#e7dcca;color:#22201d}
+.article-cover-red{background:#471d21;color:#f5eee5}
+.article-cover:before{content:'';width:240px;height:240px;border:1px solid currentColor;border-radius:50%;position:absolute;bottom:-137px;right:-110px;opacity:.17}
+.article-card:hover .article-cover:before{transform:scale(1.1);transition:transform .3s}
+.article-card .article-cover strong{font-size:clamp(19px,2vw,27px)}
+@media(max-width:560px){.article-cover{height:265px}}
+ 
+.publication-group{margin-top:52px}
+.publication-group[hidden],.publication-group .article-card[hidden]{display:none!important}
+.publication-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-top:2px solid #171615;padding-top:22px;margin-bottom:23px}
+.publication-heading h2{font:800 clamp(26px,3vw,38px)/1.1 Manrope,sans-serif;letter-spacing:-.045em;margin:0}
+.publication-heading span{font:600 11px 'IBM Plex Mono',monospace;color:#857c6c;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:560px){.publication-heading{align-items:start;flex-direction:column;gap:8px}}
+
+.editorial-filter{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.editorial-filter button{white-space:nowrap}
+</style><link href="https://jamespgcallan.github.io/touchline-site/writing.html" rel="canonical"/><meta content="https://jamespgcallan.github.io/touchline-site/writing.html" property="og:url"/></head><body><header class="nav"><div class="shell nav-in"><a class="brand" href="index.html">JAMES CALLAN<span style="color:#b59a60">.</span></a><button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle">MENU</button><nav class="navlinks"><a href="index.html#work">Work</a><a href="graphics.html">Creative Graphics</a><a href="branding.html">Branding &amp; Design</a><a href="media.html">Media &amp; Marketing</a><a class="active" href="writing.html">Writing</a><a href="about.html">About</a></nav></div></header><section class="subhero"><div class="shell"><div class="eyebrow">Selected work / 04</div><h1 class="page-title">Writing &amp; Editorial</h1></div></section><main><section class="section shell"><p class="editorial-lead">I've written for RTÉ Sport, RTÉ Brainstorm, LOI Talk, Boardroom Ball, The Sports Hacks, TIRO, Goalazzo and Touchline. These are the stories I’d want someone to read first, from Irish football reporting to club strategy and the culture around the game.</p><div class="writing-proof"><strong>145 published posts</strong><span>Touchline publishing dashboard, 28 October 2026. The portfolio below is a curated selection from several publications; where shown, viewing figures relate to individual Touchline posts, not all outlets.</span></div><div aria-label="Filter articles" class="editorial-filter"><button aria-pressed="true" class="selected" data-publication-filter="All work" type="button">All publications</button><button aria-pressed="false" data-publication-filter="RTÉ Sport" type="button">RTÉ Sport</button><button aria-pressed="false" data-publication-filter="RTÉ Brainstorm" type="button">RTÉ Brainstorm</button><button aria-pressed="false" data-publication-filter="Touchline" type="button">Touchline</button><button aria-pressed="false" data-publication-filter="LOI Talk" type="button">LOI Talk</button><button aria-pressed="false" data-publication-filter="Boardroom Ball" type="button">Boardroom Ball</button><button aria-pressed="false" data-publication-filter="The Sports Hacks" type="button">The Sports Hacks</button><button aria-pressed="false" data-publication-filter="TIRO" type="button">TIRO</button><button aria-pressed="false" data-publication-filter="Goalazzo" type="button">Goalazzo</button></div><section class="publication-group" data-publication="RTÉ Sport"><div class="publication-heading"><h2>RTÉ Sport</h2><span>4 selected articles</span></div><div class="article-grid"><a class="article-card" data-genre="Reporting" href="https://www.rte.ie/sport/soccer/2025/1127/1546158-no-grand-designs-footballs-infrastructure-logjam/" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-cream"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>03</b></div><strong>No Grand Designs: Football's Infrastructure Logjam</strong><div class="cover-bottom"><span>RTÉ Sport</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">RTÉ Sport <span>·</span> Reporting</div>
+<h3>No Grand Designs: Football's Infrastructure Logjam</h3><p>The facilities problem holding Irish football back, and the difficult decisions needed to address it.</p>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Reporting" href="https://www.rte.ie/sport/soccer/2025/1026/1540367-a-new-loi-academy-road-what-to-take-from-english-model/" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-dark"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>05</b></div><strong>A New LOI Academy Road: What to Take from the English Model</strong><div class="cover-bottom"><span>RTÉ Sport</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">RTÉ Sport <span>·</span> Reporting</div>
+<h3>A New LOI Academy Road: What to Take from the English Model</h3><p>Why developing the next generation of Irish footballers needs more than good intentions.</p>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Reporting" href="https://www.rte.ie/sport/soccer/2025/1120/1545026-would-world-cup-qualification-change-irish-football/" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-red"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>16</b></div><strong>Would World Cup Qualification Change Irish Football?</strong><div class="cover-bottom"><span>RTÉ Sport</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">RTÉ Sport <span>·</span> Reporting</div>
+<h3>Would World Cup Qualification Change Irish Football?</h3><p>Looking beyond a tournament berth to the possible consequences for the domestic game.</p>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Reporting" href="https://www.rte.ie/sport/soccer/2026/0204/1556745-how-the-loi-is-betting-on-protecting-integrity/" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-dark"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>17</b></div><strong>How the LOI Is Betting on Protecting Integrity</strong><div class="cover-bottom"><span>RTÉ Sport</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">RTÉ Sport <span>·</span> Reporting</div>
+<h3>How the LOI Is Betting on Protecting Integrity</h3><p>The difficult job of protecting the domestic league as betting markets develop.</p>
+<span class="article-link">Read original article ↗</span></div></a></div></section><section class="publication-group" data-publication="RTÉ Brainstorm"><div class="publication-heading"><h2>RTÉ Brainstorm</h2><span>1 selected article</span></div><div class="article-grid"><a class="article-card" data-genre="Football business" href="https://www.rte.ie/brainstorm/2025/0811/1527297-soccer-multi-club-ownership-uefa-rules/" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-bronze"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>10</b></div><strong>Why Multi-Club Ownership Is Causing Problems</strong><div class="cover-bottom"><span>RTÉ Brainstorm</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">RTÉ Brainstorm <span>·</span> Football business</div>
+<h3>Why Multi-Club Ownership Is Causing Problems</h3><p>Football ownership groups, European competition and the rules struggling to keep pace.</p>
+<span class="article-link">Read original article ↗</span></div></a></div></section><section class="publication-group" data-publication="Touchline"><div class="publication-heading"><h2>Touchline</h2><span>8 selected articles</span></div><div class="article-grid"><a class="article-card" data-genre="Football business" href="https://touchlinesport.substack.com/p/sligo-rovers-can-fan-ownership-still" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-dark"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>01</b></div><strong>Sligo Rovers: Can Fan Ownership Still Compete?</strong><div class="cover-bottom"><span>Touchline</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Touchline <span>·</span> Football business</div>
+<h3>Sligo Rovers: Can Fan Ownership Still Compete?</h3><p>A closer look at what supporter ownership means when the money around Irish football keeps changing.</p>
+<div class="article-performance">1,700 views · 31% email open rate</div>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football culture" href="https://jamescallan3.substack.com/p/the-death-of-joga-bonito" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-bronze"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>02</b></div><strong>The Death of Joga Bonito</strong><div class="cover-bottom"><span>Touchline</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Touchline <span>·</span> Football culture</div>
+<h3>The Death of Joga Bonito</h3><p>On Brazilian flair, freedom and whether football has coached some of the fun out of itself.</p>
+<div class="article-performance">1,140 views · 46% email open rate</div>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football business" href="https://touchlinesport.substack.com/p/waterfords-owners-put-in-38m-so-where" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-red"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>04</b></div><strong>Waterford’s Owners Put In €3.8m. So Where Did The Money Go?</strong><div class="cover-bottom"><span>Touchline</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Touchline <span>·</span> Football business</div>
+<h3>Waterford’s Owners Put In €3.8m. So Where Did The Money Go?</h3><p>A look at club investment, operating costs and what the figures actually mean.</p>
+<div class="article-performance">1,440 views · 29% email open rate</div>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football business" href="https://touchlinesport.substack.com/p/how-barcelonas-iconic-unicef-sponsorship" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-cream"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>07</b></div><strong>Why Barcelona Put UNICEF on Their Shirt</strong><div class="cover-bottom"><span>Touchline</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Touchline <span>·</span> Football business</div>
+<h3>Why Barcelona Put UNICEF on Their Shirt</h3><p>The story behind one of football's most unusual and memorable shirt sponsorships.</p>
+<div class="article-performance">836 views · 31% email open rate</div>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football culture" href="https://touchlinesport.substack.com/p/the-rise-and-fall-of-juventus-how" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-red"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>08</b></div><strong>The Rise and Fall of Juventus</strong><div class="cover-bottom"><span>Touchline</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Touchline <span>·</span> Football culture</div>
+<h3>The Rise and Fall of Juventus</h3><p>How a giant of Italian football lost its way, on and off the pitch.</p>
+<div class="article-performance">813 views · 35% email open rate</div>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football culture" href="https://jamescallan3.substack.com/p/the-irishman-who-built-atletico-madrid" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-dark"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>09</b></div><strong>The Irishman Who Built Atlético Madrid</strong><div class="cover-bottom"><span>Touchline</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Touchline <span>·</span> Football culture</div>
+<h3>The Irishman Who Built Atlético Madrid</h3><p>Patrick O'Connell's extraordinary career and the mark an Irishman left on Spanish football.</p>
+<div class="article-performance">711 views · 54% email open rate</div>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football culture" href="https://jamescallan3.substack.com/p/the-local-lads-who-saved-a-town" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-bronze"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>18</b></div><strong>Dundalk FC: The Local Lads Who Saved a Town</strong><div class="cover-bottom"><span>Touchline</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Touchline <span>·</span> Football culture</div>
+<h3>Dundalk FC: The Local Lads Who Saved a Town</h3><p>A club story about the people and local connections that helped Dundalk find its feet again.</p>
+<div class="article-performance">483 views · 78% email open rate</div>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football culture" href="https://jamescallan3.substack.com/p/the-football-shirt-has-replaced-the" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-cream"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>19</b></div><strong>How the Football Shirt Replaced the Football Club</strong><div class="cover-bottom"><span>Touchline</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Touchline <span>·</span> Football culture</div>
+<h3>How the Football Shirt Replaced the Football Club</h3><p>Why football shirts have become culture, fashion and identity in their own right.</p>
+<span class="article-link">Read original article ↗</span></div></a></div></section><section class="publication-group" data-publication="LOI Talk"><div class="publication-heading"><h2>LOI Talk</h2><span>3 selected articles</span></div><div class="article-grid"><a class="article-card" data-genre="Football business" href="https://loitalk.com/shamrock-rovers-winning-machine-model-explained/" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-cream"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>11</b></div><strong>Shamrock Rovers' Winning Machine: The Model Explained</strong><div class="cover-bottom"><span>LOI Talk</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">LOI Talk <span>·</span> Football business</div>
+<h3>Shamrock Rovers' Winning Machine: The Model Explained</h3><p>A look at the structures and decisions behind Shamrock Rovers' sustained success.</p>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Reporting" href="https://loitalk.com/ireland-producing-elite-talent-part-time-hours/" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-red"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>12</b></div><strong>Can Ireland Produce Elite Talent on Part-Time Hours?</strong><div class="cover-bottom"><span>LOI Talk</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">LOI Talk <span>·</span> Reporting</div>
+<h3>Can Ireland Produce Elite Talent on Part-Time Hours?</h3><p>The coaching-hours problem facing Irish football's young players.</p>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football business" href="https://loitalk.com/bohemians-community-wealth-building-dublin-strategy/" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-dark"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>13</b></div><strong>Bohemians and Community Wealth Building</strong><div class="cover-bottom"><span>LOI Talk</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">LOI Talk <span>·</span> Football business</div>
+<h3>Bohemians and Community Wealth Building</h3><p>The relationship between a football club, its community and the local economy.</p>
+<span class="article-link">Read original article ↗</span></div></a></div></section><section class="publication-group" data-publication="Boardroom Ball"><div class="publication-heading"><h2>Boardroom Ball</h2><span>2 selected articles</span></div><div class="article-grid"><a class="article-card" data-genre="Football business" href="https://open.substack.com/pub/boardroomball/p/az-alkmaar-europes-most-efficient" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-bronze"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>14</b></div><strong>AZ Alkmaar: Europe's Most Efficient?</strong><div class="cover-bottom"><span>Boardroom Ball</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Boardroom Ball <span>·</span> Football business</div>
+<h3>AZ Alkmaar: Europe's Most Efficient?</h3><p>A club strategy feature on recruitment, development and punching above your weight.</p>
+<span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Football business" href="https://open.substack.com/pub/boardroomball/p/fk-bodglimt-the-football-start-up" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-cream"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>15</b></div><strong>FK Bodø/Glimt: The Football Start-Up</strong><div class="cover-bottom"><span>Boardroom Ball</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">Boardroom Ball <span>·</span> Football business</div>
+<h3>FK Bodø/Glimt: The Football Start-Up</h3><p>How a club from northern Norway built something difficult to ignore.</p>
+<span class="article-link">Read original article ↗</span></div></a></div></section><section class="publication-group" data-publication="The Sports Hacks"><div class="publication-heading"><h2>The Sports Hacks</h2><span>2 selected articles</span></div><div class="article-grid"><a class="article-card" data-genre="Reporting" href="https://www.thesportshacks.com/p/alex-murphy-at-kaiserslautern-the" rel="noopener noreferrer" target="_blank"><div class="article-cover article-cover-red"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>20</b></div><strong>Alex Murphy at Kaiserslautern: The Irish Defender Joining a German Giant’s Bundesliga Push</strong><div class="cover-bottom"><span>The Sports Hacks</span><span>↗</span></div></div><div class="article-inner"><div class="article-meta">The Sports Hacks <span>·</span> Reporting</div><h3>Alex Murphy at Kaiserslautern: The Irish Defender Joining a German Giant’s Bundesliga Push</h3><p>A young Irish defender, a huge German club and the value of proper first-team minutes.</p><span class="article-link">Read original article ↗</span></div></a><a class="article-card" data-genre="Reporting" href="https://open.substack.com/pub/thesportshacks/p/dundalk-feel-like-dundalk-again-after" rel="noopener noreferrer" target="_blank"><div class="article-cover article-cover-bronze"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>21</b></div><strong>Dundalk Feel Like Dundalk Again</strong><div class="cover-bottom"><span>The Sports Hacks</span><span>↗</span></div></div><div class="article-inner"><div class="article-meta">The Sports Hacks <span>·</span> Reporting</div><h3>Dundalk Feel Like Dundalk Again</h3><p>Reporting on Dundalk and the people behind the club’s return to form.</p><span class="article-link">Read original article ↗</span></div></a></div></section><section class="publication-group" data-publication="TIRO"><div class="publication-heading"><h2>TIRO</h2><span>1 selected article</span></div><div class="article-grid"><a class="article-card" data-genre="Reporting" href="https://tirofootball.com/posts/2025-11-25-why-more-irish-footballers-are-heading-to-italy" rel="noopener noreferrer" target="_blank">
+<div class="article-cover article-cover-bronze"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>06</b></div><strong>Why More Irish Footballers Are Heading to Italy</strong><div class="cover-bottom"><span>TIRO</span><span>↗</span></div></div>
+<div class="article-inner"><div class="article-meta">TIRO <span>·</span> Reporting</div>
+<h3>Why More Irish Footballers Are Heading to Italy</h3><p>Exploring the routes taking young Irish players into Italian football.</p>
+<span class="article-link">Read original article ↗</span></div></a></div></section><section class="publication-group" data-publication="Goalazzo"><div class="publication-heading"><h2>Goalazzo</h2><span>1 selected article</span></div><div class="article-grid"><a class="article-card" data-genre="Football culture" href="https://goalazzo.substack.com/p/no-country-for-old-men-the-serie" rel="noopener noreferrer" target="_blank"><div class="article-cover article-cover-dark"><div class="cover-mark"><span>JAMES CALLAN / SELECTED WRITING</span><b>22</b></div><strong>No Country for Old Men</strong><div class="cover-bottom"><span>Goalazzo</span><span>↗</span></div></div><div class="article-inner"><div class="article-meta">Goalazzo <span>·</span> Football culture</div><h3>No Country for Old Men</h3><p>A Serie A feature for Goalazzo. Read the original piece for the full story.</p><span class="article-link">Read original article ↗</span></div></a></div></section><p class="writing-note">My own selection of published pieces. Click any cover to read the original article on its publisher's website. The covers here are portfolio title designs, not the original article images.</p></section></main><footer class="footer" id="contact"><div class="shell"><div class="footer-top"><div><div class="eyebrow">Have something in mind?</div><h2>Let's talk football.</h2><p>Whether it's a design, an article or a media project, I'm always interested in a good idea. Get in touch through LinkedIn.</p><a class="btn" href="https://www.linkedin.com/in/james-callan-972599186/" rel="noopener" target="_blank">Get in touch ↗</a></div></div><div class="footline"><span>© 2026 James Callan. Selected work.</span><span>Football · Media · Design · Writing</span></div></div></footer><script src="site.js"></script><script>
+document.querySelectorAll('.editorial-filter button').forEach(btn=>btn.addEventListener('click',()=>{
+ const selected=btn.dataset.publicationFilter;
+ document.querySelectorAll('.editorial-filter button').forEach(other=>{
+   const active=other===btn;
+   other.classList.toggle('selected',active);
+   other.setAttribute('aria-pressed',String(active));
+ });
+ document.querySelectorAll('.publication-group').forEach(group=>{
+   group.hidden=selected!=='All work' && group.dataset.publication!==selected;
+   group.querySelectorAll('.article-card').forEach(card=>card.hidden=false);
+ });
+}));
+</script></body></html>
